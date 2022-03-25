@@ -37,7 +37,9 @@
     "prettier": "prettier --write '*.{ts,tsx,js,html,jsx,md}' '{src,test}/**/*.{ts,tsx,js,html,jsx,md}'",
     "test": "jest --passWithNoTests",
     "test:coverage": "yarn test --verbose --coverage",
-    "upkeep": "cd ../.. && yarn upkeep"
+    "upkeep": "cd ../.. && yarn upkeep",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "JSON2016": "^1.0.0",
@@ -46,9 +48,11 @@
     "npm-check-updates": "^4.1.1",
     "reduct": "^3.3.1",
     "sort-package-json": "^1.40.0",
-    "yaml": "^1.8.3"
+    "yaml": "^1.8.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/yaml": "^1.2.0"
-  }
+  },
+  "snyk": true
 }
