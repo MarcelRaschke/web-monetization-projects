@@ -19,7 +19,9 @@
     "build:ts": "tsc --build tsconfig.references.json",
     "build:ts:verbose": "yarn build:ts --verbose",
     "lint:all": "yarn lint 'packages/*/{src,test}/**/*.ts*'",
-    "lint:staged": "lint-staged --shell"
+    "lint:staged": "lint-staged --shell",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [
     "ilp",
@@ -97,5 +99,9 @@
     "webpack-command": "^0.5.0",
     "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
