@@ -52,6 +52,6 @@
     "btoa": "^1.2.1",
     "jsonwebtoken": "^8.5.1",
     "localforage": "^1.7.3",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.7"
   }
 }
