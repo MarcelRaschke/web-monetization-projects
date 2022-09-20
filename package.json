@@ -79,7 +79,7 @@
     "husky": "^4.2.3",
     "jest": "^25.2.6",
     "jest-puppeteer": "^4.4.0",
-    "lerna": "^3.20.2",
+    "lerna": "^5.5.2",
     "lint-staged": "^10.1.1",
     "prettier": "^2.0.2",
     "puppeteer": "^2.1.1",
